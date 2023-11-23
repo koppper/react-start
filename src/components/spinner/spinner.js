@@ -1,8 +1,7 @@
 import React from 'react';
 import './spinner.css';
 
-export default () => {
-    return (
+const Spinner = () => {    return (
         <div className="lds-css">
             <div className="lds-double-ring">
                 <div></div>
@@ -11,4 +10,4 @@ export default () => {
         </div>
     );
 };
-
+export default Spinner;
