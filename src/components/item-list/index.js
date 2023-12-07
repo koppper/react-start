@@ -1,2 +1,2 @@
-import PeoplePage from './people-page';
+import PeoplePage from './item-list';
 export default PeoplePage;
