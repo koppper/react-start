@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 
 import Header from '../header';
@@ -11,6 +12,10 @@ import PeoplePage from "../people-page";
 import ItemList from "../item-list";
 import PersonDetails from "../person-details";
 import SwapiService from "../../services/swapi-service";
+
+
+
+
 
 
 export default class App extends Component{
@@ -80,4 +85,3 @@ export default class App extends Component{
         );
     }
 };
-export default App;

@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import SwapiService from '../../services/swapi-service';
 import ErrorButton from '../error-button';
+
 import './person-details.css';
 
 export default class PersonDetails extends Component {
+
     swapiService = new SwapiService();
 
     state = {
@@ -30,11 +32,14 @@ export default class PersonDetails extends Component {
                 this.setState({ person })
             })
     }
+
+
     render() {
         if(!this.state.person)
             return <span>Select a person from a list.</span>;
 
         const {id, name, gender, birthYear, eyeColor} = this.state.person;
+
         return (
             <div className="person-details card">
                 <img className="person-image"
